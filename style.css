@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.otf");
+} 
+@font-face {  
+  font-family:"SpaceGrotesk";
+  src: url("fonts/SpaceGrotesk-Regular.otf");
+}  
+@font-face { 
+  font-family:"Rokkitt";
+  src: url("fonts/Rokkitt-Regular.ttf");
+  
+}
+
+.navbar-nav> li{
+  padding-left: 30px;
+  padding-right: 30px;
+font-family:"Rokkitt";
+}
+
+.logo {
+ width: 130px;
+height:130px;
+margin-top: 90px;
+margin-left: 50px;
+position: absolute;
+box-shadow:unset 5px 5px 2em rgb(46, 46, 46);
+-moz-box-shadow: 4px 4px 10px rgb(46, 46, 46);  
+-webkit-box-shadow: 4px 4px 10px rgb(46, 46, 46); 
+}
+
+body{
+
+background-image:url(backgroundop.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: absolute;
+
+}
