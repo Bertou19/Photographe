@@ -11,6 +11,10 @@
   src: url("fonts/Rokkitt-Regular.ttf");
   
 }
+
+/*INDEX*/
+
+
 .background{
   width :100%;
   height: 900px;
@@ -43,7 +47,7 @@
   margin : auto;
 }
 
-h1{
+.h1-index{
   font-family:"SpaceGrotesk" ;
   font-size: 3rem;
   font-weight: 500;
@@ -74,6 +78,7 @@ h1{
 .title-section{
   font-family:"Rokkitt";
   text-shadow:grey 1px 2px 10px;
+  color: hsla(212, 28%, 26%, 0.87);
 }
 
 .text-home{
@@ -95,8 +100,38 @@ h1{
 .btn{
   font-family : "Montserrat";
 }
+/*GALERIE*/
 
 
+
+
+/*TARIFS*/
+
+.star{
+  height: 20px;
+  width:20px;
+  }
+
+/*CONTACT*/
+
+.title-form{
+
+  position:absolute;
+  font-family:"Rokkitt";
+  text-shadow:grey 1px 2px 10px;
+  color: hsla(212, 28%, 26%, 0.87);
+
+
+}
+
+
+
+
+
+
+
+
+  /*FOOTER*/
 
 .footer-dark {
   padding:50px 0;
