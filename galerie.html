@@ -11,7 +11,10 @@
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
   <title>Charles Cantin-Photographe</title>
+
 </head>
 
 <body>
@@ -20,37 +23,154 @@
   <header class="header">
     <nav class="navbar navbar-expand-lg fixed-top p-3 bg-white ">
       <img class="logo" src="logo-photographe.png" alt="logo">
-      <div class="container "><a href="#" class="navbar-brand text-uppercase font-weight-bold "></a>
-        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-          class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+      <a href="#" class="navbar-brand text-uppercase font-weight-bold "></a>
+      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+          fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+          <path
+            d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+        </svg>
+      </button>
 
-        <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav ">
-            <li class="nav-item"><a
-                href="#file:///Users/Bertille/Documents/CoursHTML-STUDI/EVALUATIONS/ECF-d'entrai%CC%82nement(Front-End)/index.html#"
-                class="nav-link font-weight-bold text-dark ">Accueil</a></li>
-            <li class="nav-item active text-decoration-underline"><a href="#"
-                class="nav-link font-weight-bold link-secondary">Galerie</a></li>
-            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Prestations/Tarifs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link font-weight-bold text-dark">Contact</a></li>
-          </ul>
-        </div>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold text-dark ">Accueil</a></li>
+          <li class="nav-item active text-decoration-underline"><a href="galerie.html"
+              class="nav-link font-weight-bold link-secondary">Galerie</a></li>
+          <li class="nav-item"><a href="tarifs.html" class="nav-link font-weight-bold text-dark">Prestations/Tarifs</a>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold text-dark">Contact</a></li>
+        </ul>
       </div>
+
     </nav>
   </header>
 
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center pt-3">
           <h1 class="title-galerie">Galerie</h1>
         </div>
       </div>
     </div>
   </section>
 
+  <section>
+    <div class="dropdown text-center p-5">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Catégories
+      </a>
 
+      <ul class="dropdown-menu" id="filters">
+        <li><a class="dropdown-item" href="#" id="all">Toutes</a></li>
+        <li><a class="dropdown-item" href="#" id="family">Famille</a></li>
+        <li><a class="dropdown-item" href="#" id="baby">Bébé</a></li>
+        <li><a class="dropdown-item" href="#" id="baptism">Baptême</a></li>
+        <li><a class="dropdown-item" href="#" id="portrait">Portrait</a></li>
+        <li><a class="dropdown-item" href="#" id="couple">Couple</a></li>
+        <li><a class="dropdown-item" href="#" id="marriage">Mariage</a></li>
+        <li><a class="dropdown-item" href="#" id="pregnant">Grossesse</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <div class="container">
+    <div class="row">
+      <div class='col-12 d-flex justify-content-center'>
+        <div class="galerie text-center .d-block .mx-auto pb-5">
+          <ul id="galerie_mini">
+            <li><a href="photos-galerie/famille.jpg" title="Famille"><img src="photos-galerie/minis/m-famille.jpg"
+                  alt="mère et filles" data-family class="active"></a>
+            </li>
+            <li><a href="photos-galerie/petiteFamille.jpg" title="Famille"><img
+                  src="photos-galerie/minis/m-petiteFamille.jpg" alt="famille" data-family class="active"></a>
+            </li>
+            <li><a href="photos-galerie/bebeFamille.jpg" title="Famille"><img
+                  src="photos-galerie/minis/m-bebeFamille.jpg" alt="parents et bébé" data-family class="active"></a>
+            </li>
+            <li><a href="photos-galerie/mother.jpg" title="Famille"><img src="photos-galerie/minis/m-mother.jpg"
+                  alt="mere et enfant" data-family class="active"></a>
+            </li>
+            <li><a href="photos-galerie/pereMere.jpg" title="Bébé"><img src="photos-galerie/minis/m-pereMere.jpg"
+                  alt="bébé en famille" data-baby class="active"></a>
+            </li>
+            <li><a href="photos-galerie/nouveauNé.jpg" title="Bébé"><img src="photos-galerie/minis/m-nouveauNe.jpg"
+                  alt="nouveau né" data-baby class="active"></a>
+            </li>
+            <li><a href="photos-galerie/bebe.jpg" title="Bébé"><img src="photos-galerie/minis/m-bebe.jpg" alt="bébé"
+                  data-baby class="active"></a></li>
+            <li><a href="photos-galerie/pereEtBebe.jpg" title="Bébé"><img src="photos-galerie/minis/m-pereEtBebe.jpg"
+                  alt="père et bébé" data-baby class="active"></a>
+            </li>
+            <li><a href="photos-galerie/bapteme.jpg" title="Baptême"><img src="photos-galerie/minis/m-bapteme.jpg"
+                  alt="baptême" data-baptism class="active"></a>
+            </li>
+            <li><a href="photos-galerie/baptême3.jpg" title="Baptême"><img src="photos-galerie/minis/m-baptême3.jpg"
+                  alt="baptême" data-baptism class="active"></a>
+            </li>
+            <li><a href="photos-galerie/baptême2.jpg" title="Baptême"><img src="photos-galerie/minis/m-baptême2.jpg"
+                  alt="baptême" data-baptism class="active"></a>
+            </li>
+            <li><a href="photos-galerie/baptême.jpg" title="Baptême"><img src="photos-galerie/minis/m-baptême.jpg"
+                  alt="baptême" data-baptism class="active"></a>
+            </li>
+            <li><a href="photos-galerie/portrait.jpg" title="Portrait"><img src="photos-galerie/minis/m-portrait.jpg"
+                  alt="portrait" data-portrait class="active"></a>
+            </li>
+            <li><a href="photos-galerie/portraitfemme.jpg" title="Portrait"><img
+                  src="photos-galerie/minis/m-portraitfemme.jpg" alt="portrait de femme" data-portrait
+                  class="active"></a>
+            </li>
+            <li><a href="photos-galerie/portraithomme.jpg" title="Portrait"><img
+                  src="photos-galerie/minis/m-portraithomme.jpg" alt="portrait de homme" data-portrait
+                  class="active"></a>
+            </li>
+            <li><a href="photos-galerie/couple.jpg" title="Couple"><img src="photos-galerie/minis/m-couple.jpg"
+                  alt="couple" data-couple class="active"></a></li>
+            <li><a href="photos-galerie/couplecoeur.jpg" title="Couple"><img
+                  src="photos-galerie/minis/m-couplecoeur.jpg" alt="couple amoureux" data-couple class="active"></a>
+            </li>
+            <li><a href="photos-galerie/coupleVelo.jpg" title="Couple"><img src="photos-galerie/minis/m-coupleVelo.jpg"
+                  alt="couple en vélo" data-couple class="active"></a>
+            </li>
+            <li><a href="photos-galerie/mariage.jpg" title="Mariage"><img src="photos-galerie/minis/m-mariage.jpg"
+                  alt="mariage" data-marriage class="active"></a>
+            </li>
+            <li><a href="photos-galerie/coupleMarié.jpg" title="Mariage"><img
+                  src="photos-galerie/minis/m-coupleMarie.jpg" alt="couple marié" data-marriage class="active"></a>
+            </li>
+            <li><a href="photos-galerie/mariage2.jpg" title="Mariage"><img src="photos-galerie/minis/m-mariage2.jpg"
+                  alt="mariage" data-marriage class="active"></a>
+            </li>
+            <li><a href="photos-galerie/demoiselleDhonneur.jpg" title="Mariage"><img
+                  src="photos-galerie/minis/m-demoiselleDhonneur.jpg" alt="demoiselles d'honneur" data-marriage
+                  class="active"></a>
+            </li>
+            <li><a href="photos-galerie/grossesse.jpg" title="Grossesse"><img src="photos-galerie/minis/m-grossesse.jpg"
+                  alt="grossesse" data-pregnant class="active"></a>
+            </li>
+            <li><a href="photos-galerie/enceinte.jpg" title="Grossesse"><img src="photos-galerie/minis/m-enceinte.jpg"
+                  alt="femme enceinte" data-pregnant class="active"></a>
+            </li>
+            <li><a href="photos-galerie/mereetfille.jpg" title="Grossesse"><img
+                  src="photos-galerie/minis/m-mereetfille.jpg" alt="mere enceinte et fille" data-pregnant
+                  class="active"></a>
+            </li>
+          </ul>
+          <dl id="photo">
+            <dt>
+              Famille
+            </dt>
+            <dd><img id="big_pict" src="photos-galerie/famille.jpg" alt="Photo 1 en taille normale" /></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -100,12 +220,8 @@
     </footer>
   </div>
 
-
-
-
-
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="script.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
