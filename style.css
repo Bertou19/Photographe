@@ -133,7 +133,6 @@
   transition : width .5s;
 
 }
-
 .inactive{
   width: 0;
   padding:0;
@@ -151,16 +150,56 @@ ul#galerie_mini
 
 }
 
+
+
+
+
 ul#galerie_mini li
 {
   float: left ;
 }
 
+@media (max-width:767px) {
+  ul#galerie_mini li{
+   float:none;
+  }
+#big_pict{
+  max-width:100%;
+
+}
+}
+
+@media only screen and (max-width:768px) {
+  ul#galerie_mini li{
+   float:none;
+   display: inline;
+   flex-wrap: nowrap;
+  }
+
+  #big_pict{
+  max-width:100%;
+
+}
+}
+
+@media (max-width:991px) {
+  ul#galerie_mini li{
+    float:none;
+    display: inline;
+    flex-wrap: nowrap;
+   }
+ 
+   #big_pict{
+   max-width:100%;
+  }
+}
+
+
 ul#galerie_mini li a img
 {
   margin: 2px 1px ;
   border: 1px solid 
-rgb(253, 253, 253) ;
+rgb(255, 255, 255) ;
 }
 
 dl#photo
@@ -171,9 +210,9 @@ dl#photo
 
 dl#photo dt
 {
-  font: italic 2.5em/1.5em "Montserrat", serif ;
+  font: 2.5em/1.5em "Montserrat", serif ;
   color: 
-rgb(255, 255, 255) ;
+rgba(0, 0, 0, 0.308) ;
 }
 
 dl#photo dd
@@ -227,6 +266,39 @@ h1,p{
 
 }
 }
+
+@media (max-width:995px) {
+  .border{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+   }
+ 
+   h1,p{
+    text-align:center;
+  
+  }
+  .form{
+    width:350px;
+  }
+}
+
+@media (max-width:1500px) {
+  .border{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+   }
+ 
+   h1,p{
+    text-align:center;
+  
+  }
+  .form{
+    width:350px;
+  }
+}
+
 
 
 
