@@ -160,7 +160,8 @@ ul#galerie_mini li{
 
 @media (max-width:767px){
   ul#galerie_mini li{
-   float:none;
+   gap:10px;
+    float:none;
   }
   #big_pict{
    max-width:100%;
