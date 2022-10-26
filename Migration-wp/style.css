@@ -1,0 +1,405 @@
+/*
+Theme Name: Twenty Twenty
+Text Domain: twentytwenty
+Version: 1.1
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Site vitrine de 4 pages pour un photographe.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Author: DE Almeida Bertille
+Author URI: https://wordpress.org/
+Theme URI: https://wordpress.org/themes/twentytwenty/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.otf");
+} 
+@font-face {  
+  font-family:"SpaceGrotesk";
+  src: url("fonts/SpaceGrotesk-Regular.otf");
+}  
+@font-face { 
+  font-family:"Rokkitt";
+  src: url("fonts/Rokkitt-Regular.ttf");
+  
+}
+
+/*INDEX*/
+
+.background{
+  width :100%;
+  height: 900px;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.navbar-nav> li{
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family:"Rokkitt";
+}
+
+
+.logo {
+  margin-left: 100px;
+  position: absolute;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow:unset 5px 5px 2em rgb(46, 46, 46);
+  -moz-box-shadow: 4px 4px 10px rgb(46, 46, 46);  
+  -webkit-box-shadow: 4px 4px 10px rgb(46, 46, 46); 
+}
+
+@media (max-width:767px){
+  .logo{ 
+    margin-left: 50px;
+  }
+ 
+}
+
+h5{
+  font-family:"SpaceGrotesk" ;
+}
+
+.home{
+  top: 400px; width:100%;
+  position: absolute;
+  display:block;
+  margin : auto;
+}
+
+.h1-index{
+  font-family:"SpaceGrotesk" ;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align:center;
+  border-radius: 2px;
+  color: black; 
+  text-shadow:
+ grey 1px 2px 10px;
+  -webkit-text-stroke: 1.5px white ;
+}
+
+.profil{
+  margin : 0 auto;
+  height: 180px;
+  width: 220px;
+  box-shadow: grey 4px 4px 4px;
+  
+}
+
+@media (max-width:767px) {
+  .profil {
+    margin : 0 auto;
+    height: 150px;
+    width: 190px;
+  }
+}
+
+.title-section{
+  font-family:"Rokkitt";
+  text-shadow:grey 1px 2px 10px;
+  color: hsla(212, 28%, 26%, 0.87);
+}
+
+.text-home{
+  text-align: center;
+  font-family: "Montserrat" ;
+  font-size: 20px;
+  margin-top: 10px;
+  color:hsl(212, 28, 26,87%);
+  font-weight:bold;
+}
+
+@media (max-width:767px) {
+  .text-home {
+    margin-top: 5px;
+    font-size: 17px;
+  }
+}
+
+.btn{
+  font-family : "Montserrat";
+}
+
+.title-tarifs,.title-galerie, .title-form{
+
+  margin-top: 200px;
+  font-family:"Rokkitt";
+  text-shadow:grey 1px 2px 10px;
+  color: hsla(212, 28%, 26%, 0.87);
+}
+
+.btn-contact{
+  text-decoration: none;
+  color:white;
+}
+.btn-contact:hover{
+ color:grey;
+}
+
+/*GALERIE*/
+
+.galerie{
+  padding: 15px ;
+  margin: 10px 20px ;
+}
+
+.active{
+  margin-left:200px;
+  width: 120px;
+  transition: width 2s;
+
+}
+.inactive{
+  width: 0;
+  padding:0;
+  transition: width 2s;
+}
+
+ul#galerie_mini{
+  margin: 0 ;
+  padding: 0 ;
+  list-style-type: none;
+
+}
+
+ul#galerie_mini li{
+  float: left;
+}
+
+@media (max-width:767px){
+  ul#galerie_mini li{
+   gap:10px;
+    float:none;
+  }
+  #big_pict{
+   max-width:100%;
+  }
+}
+
+@media only screen and (max-width:768px){
+  ul#galerie_mini li{
+   float:none;
+   display: inline;
+   flex-wrap: nowrap;
+  }
+
+  #big_pict{
+   max-width:100%;
+  }
+}
+
+@media (max-width:991px){
+  ul#galerie_mini li{
+    float:none;
+    display: inline;
+    flex-wrap: nowrap;
+  }
+ 
+  #big_pict{
+    max-width:100%;
+  }
+}
+
+ul#galerie_mini li a img{
+  margin: 2px 1px ;
+  border: 1px solid 
+rgb(255, 255, 255) ;
+}
+
+dl#photo{
+  clear: both ;
+  margin: 0 auto ;
+}
+
+dl#photo dt{
+  font: 2.5em/1.5em "Montserrat", serif ;
+  color: 
+rgba(0, 0, 0, 0.308) ;
+}
+
+dl#photo dd{
+  margin: 0 ;
+}
+
+dl#photo img{
+  border: 1px solid 
+rgb(0, 0, 0) ;
+}
+
+.btn{
+  box-shadow: 5px 5px 5px grey;
+}
+
+#big_pict{
+  box-shadow: 5px 5px 5px grey;
+}
+
+/*TARIFS*/
+
+.star{
+  height: 20px;
+  width:20px;
+  }
+
+/*CONTACT*/
+
+.form{
+  width: 500px;
+  margin:auto;
+}
+
+.button,.form-label{
+  font-family: "SpaceGrotesk" ;
+}
+
+.border{
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-bottom: 200px;
+}
+
+@media (max-width:767px) {
+  .border {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+h1,p{
+  text-align:center;
+
+}
+.form{
+  width:350px;
+
+}
+}
+
+@media (max-width:995px) {
+  .border{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+   }
+ 
+   h1,p{
+    text-align:center;
+  
+  }
+  .form{
+    width:350px;
+  }
+}
+
+@media (max-width:1500px) {
+  .border{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+   }
+ 
+   h1,p{
+    text-align:center;
+  
+  }
+  .form{
+    width:350px;
+  }
+}
+
+/*FOOTER*/
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:black;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
